@@ -63,31 +63,6 @@ API documentation will be available at `http://localhost:8000/docs`
 6. Save your resume to the backend
 7. Download the final resume as JSON
 
-## API Endpoints
-
-- `POST /ai-enhance` - Enhance a resume section with AI
-- `POST /save-resume` - Save resume data
-- `GET /resume/{resume_id}` - Retrieve a saved resume
-- `GET /resumes` - List all saved resumes
-
-## Project Structure
-
-\`\`\`
-├── app/
-│   └── page.tsx              # Main page component
-├── components/
-│   ├── file-upload.tsx       # File upload component
-│   └── resume-editor.tsx     # Main resume editor
-├── lib/
-│   └── api.ts               # API utilities
-├── scripts/
-│   ├── main.py              # FastAPI server
-│   └── requirements.txt     # Python dependencies
-├── types/
-│   └── resume.ts            # TypeScript types
-└── README.md
-\`\`\`
-
 ## Notes
 
 - File parsing is mocked - in production, you would integrate with libraries like `pdf-parse` or `mammoth`
